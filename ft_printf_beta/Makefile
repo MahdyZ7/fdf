@@ -21,7 +21,7 @@ DIRS = ../libft_beta
 
 CC = gcc
 
-CFLAGS = -Werror -Wall -Wextra
+CFLAGS = -Wall -Wextra
 
 
 OBJS = $(SRC:.c=.o)

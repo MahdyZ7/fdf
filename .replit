@@ -1,0 +1,2 @@
+run = "./fdf test_maps/pylone.fdf"
+compile = "make"

@@ -13,6 +13,7 @@
 #ifndef FDF_H
 # define FDF_H
 # include "minilibx_macos/mlx.h"
+# include "minilibx-linux//mlx.h"
 # include "libft_beta/libft.h"
 # include "ft_printf_beta/ft_printf.h"
 # include <math.h>
@@ -28,6 +29,37 @@
 # define BETA 0
 # define GAMMA 0.61548
 # define STABILITY 0.5
+
+// // #ifdef linux
+// #  define W_KEY 119
+// #  define A_KEY 97
+// #  define S_KEY 115
+// #  define D_KEY 100
+// #  define LEFT_KEY 65361
+// #  define RIGHT_KEY 65363
+// #  define ESC_KEY 65307
+// #  define M_KEY 109
+// #  define H_KEY 104
+// #  define UP_KEY 65362
+// #  define DOWN_KEY 65364
+// #  define I_KEY 34
+// // #endif
+
+// #ifdef __MACH__
+// #  define W_KEY 13
+// #  define A_KEY 0
+// #  define S_KEY 1
+// #  define D_KEY 2
+// #  define LEFT_KEY 123
+// #  define RIGHT_KEY 124
+// #  define UP_KEY 126
+// #  define DOWN_KEY 125
+// #  define ESC_KEY 53
+// #  define M_KEY 46
+// #  define H_KEY 4
+// #  define C_KEY 8
+// #  define I_KEY 34
+// #endif
 
 # define TEXT "     ---  Key Controls  ----    \n\n\
 	1) View\n\

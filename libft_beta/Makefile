@@ -26,7 +26,7 @@ BONUS = ft_lstadd_front.c ft_lstadd_back.c ft_lstclear.c ft_lstclear.c\
 
 CC = gcc
 
-CFLAGS = -Werror -Wall -Wextra
+CFLAGS = -Wall -Wextra
 
 OBJS = $(SRC:.c=.o)
 

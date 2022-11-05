@@ -70,7 +70,7 @@ int	main_setup(t_scn *scn, char *map)
 	int		width;
 	int		hight;
 
-	width = 2000;
+	width = 1000;
 	hight = 1000;
 	scn->img->img_ptr = NULL;
 	scn->now = NULL;
@@ -83,11 +83,10 @@ int	main_setup(t_scn *scn, char *map)
 	scn->win_ptr = mlx_new_window(scn->mlx_ptr, width, hight, map);
 	if (!scn->win_ptr)
 		x_press(scn);
-	scn->single_step = 1;
 	setup_img(scn->img, scn, width, hight);
 	setup_spc(scn);
 	redraw(scn, scn->img, scn->img->x_pos, scn->img->y_pos);
-	mlx_hook(scn->win_ptr, 2, 0, key_hook, scn);
+	mlx_hook(scn->win_ptr, 2, 1L << 0, key_hook, scn);
 	mlx_hook(scn->win_ptr, 17, 0, x_press, scn);
 	mlx_loop_hook(scn->mlx_ptr, nxt_step, scn);
 	mlx_loop(scn->mlx_ptr);
@@ -106,6 +105,7 @@ int	main(int argv, char **argc)
 	scn.img = &img;
 	img.nums = &nums;
 	scn.nums = &nums;
+	scn.single_step = 1;
 	scn.grid = get_grid(argc[1]);
 	if (scn.grid)
 		main_setup(&scn, argc[1]);

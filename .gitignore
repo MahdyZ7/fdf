@@ -1,0 +1,4 @@
+.vscode
+.ccls_cache
+.Ds_Store
+*.o
