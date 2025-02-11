@@ -70,7 +70,7 @@ int	main_setup(t_scn *scn, char *map)
 	int		width;
 	int		hight;
 
-	width = 1000;
+	width = 1500;
 	hight = 1000;
 	scn->img->img_ptr = NULL;
 	scn->now = NULL;
